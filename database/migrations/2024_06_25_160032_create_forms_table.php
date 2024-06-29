@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
+            $table->string('title');
             $table->string('attachment');
             $table->string('description');
             $table->string('status');

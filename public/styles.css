@@ -1,5 +1,25 @@
-
-.home-title{
+.home-title {
     font-weight: 600;
     transform: translateY(-100%);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    max-width: 65ch;
+    text-align: justify;
+}
+
+.btn {
+    padding: 10px 20px;
+    transition: 400ms ease-in-out;
+    color: #270b74;
+    border: 1px solid #270b74;
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background: #270b74;
+    }
 }

@@ -11,6 +11,7 @@ class Form extends Model
 
     protected $fillable = [
         'user_id',
+        'title',
         'attachment',
         'description',
         'status',
