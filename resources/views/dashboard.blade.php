@@ -14,29 +14,14 @@
                         <div class="flex flex-col items-center py-10" style="width: 55%">
                             <h1 class="text-3xl my-3">Welcome to Ethics Form UiTM</h1>
                             <p class="text-lg font-normal p-3 text-justify h-fit">The Research Ethics Committee (REC) of
-                                Universiti Teknologi MARA
-                                (UITM) was approved by the
-                                Vice-Chancellor
-                                and established in 2024. The committee is on Tier 2 (Executive), under governance of
-                                UiTMReasearch and
+                                Universiti Teknologi MARA (UITM) was approved by the Vice-Chancellor and established in
+                                2024. The committee is on Tier 2 (Executive), under governance of UiTMReasearch and
                                 Innovation, where it reports to the Univerity Research Committee (JKIPU) and to the UiTM
-                                Senate.
-                                <br>
-                                The objectives of REC are to safeguard the rights, safety and well-being of human
-                                research
-                                participants,
-                                povide timely, comprehensiveand independant review of ethics of purposed studies and
-                                ensure
-                                that
-                                the
-                                research complies with existing law amd regulation. The responsibility of the REC
-                                includes,
-                                but
-                                is not
-                                approval/disapproval, amendment or termination of studies which do not comfront to the
-                                standard
-                                guidelines.
-
+                                Senate. <br> The objectives of REC are to safeguard the rights, safety and well-being of
+                                human research participants, povide timely, comprehensiveand independant review of
+                                ethics of purposed studies and ensure that the research complies with existing law amd
+                                regulation. The responsibility of the REC includes, but is not approval/disapproval,
+                                amendment or termination of studies which do not comfront to the standard guidelines.
                             </p>
                         </div>
                         <div class="absolute flex justify-end items-center right-0"
