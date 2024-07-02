@@ -24,10 +24,7 @@
                     </x-nav-link>
                     <x-nav-link :href="route('contact')" class="text-white" :active="request()->routeIs('contact')">
                         Contact
-                    </x-nav-link>
-                    <x-nav-link :href="route('service')" class="text-white" :active="request()->routeIs('service')">
-                        Service
-                    </x-nav-link>
+                    </x-nav-link>        
 
                     @if (auth()->user()->role == 'student')
                         <x-nav-link :href="route('application')" class="text-white" :active="request()->routeIs('application')">
