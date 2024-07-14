@@ -1,7 +1,7 @@
 <title>Home</title>
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl leading-tight">
+        <h2 class="font-semibold text-xl text-black  leading-tight">
             Home
         </h2>
 
@@ -53,7 +53,7 @@
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-            <div class="p-6  text-gray-900 font-bold bg-red-50 flex flex-col items-center justify-center">
+            <div class="p-6  text-gray-900 font-bold bg-grey-50 flex flex-col items-center justify-center">
                 <h2 class="text-3xl font-bold text-gray-900">Application Process</h2>
                 <p class="text-lg font-normal mt-4">
                     Researchers who wish to submit their studies for ethical review must follow these steps:

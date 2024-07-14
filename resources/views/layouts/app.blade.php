@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{asset('styles.css')}}">
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen" style="background: url('{{asset('./images/bg.jpg')}}'); background-size: cover;">
+        <div class="min-h-screen" style="background-size: cover;">
             @include('layouts.navigation')
 
             <!-- Page Heading -->

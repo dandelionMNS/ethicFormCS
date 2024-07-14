@@ -55,8 +55,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6  text-gray-900 font-bold bg-red-50 flex flex-col items-center justify-center">
-                    <h1 class="text-3xl">Application</h1>
+                <div class="p-6  text-gray-900 font-bold bg-grey-50 flex flex-col items-center justify-center">
+                    <h1 class="text-3xl text-black ">Application</h1>
 
                     <form class="user-form w-full lg:w-1/2 flex flex-col p-5" method="POST" id="myForm"
                         onsubmit="showAlert(event)" action="{{ route('form.add') }}" enctype="multipart/form-data">

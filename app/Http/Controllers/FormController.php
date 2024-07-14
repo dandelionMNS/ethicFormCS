@@ -74,6 +74,10 @@ class FormController extends Controller
         if ($request->hasFile('attachment')) {
             $imageExtension = $request->file('attachment')->extension();
             $docName = $f_id . '.' . $imageExtension;
+            $leavePath = public_path($form->attachment);
+            if (file_exists($leavePath)) {
+                unlink($leavePath);
+            }
             $request->file('attachment')->move(public_path('attachment'), $docName);
 
             $form->attachment = 'attachment/' . $docName;

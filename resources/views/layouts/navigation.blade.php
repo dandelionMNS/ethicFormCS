@@ -6,37 +6,37 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-white" />
+                        <img src='https://uitm.edu.my/images/images/logo/logoUiTM.png'>
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" class="text-white" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('dashboard')" class="text-black" :active="request()->routeIs('dashboard')">
                         Home
                     </x-nav-link>
-                    <x-nav-link :href="route('about')" class="text-white" :active="request()->routeIs('about')">
+                    <x-nav-link :href="route('about')" class="text-black" :active="request()->routeIs('about')">
                         About
                     </x-nav-link>
 
-                    <x-nav-link :href="route('guide')" class="text-white" :active="request()->routeIs('guide')">
+                    <x-nav-link :href="route('guide')" class="text-black" :active="request()->routeIs('guide')">
                         Guide
                     </x-nav-link>
-                    <x-nav-link :href="route('contact')" class="text-white" :active="request()->routeIs('contact')">
+                    <x-nav-link :href="route('contact')" class="text-black" :active="request()->routeIs('contact')">
                         Contact
                     </x-nav-link>        
 
                     @if (auth()->user()->role == 'student')
-                        <x-nav-link :href="route('application')" class="text-white" :active="request()->routeIs('application')">
+                        <x-nav-link :href="route('application')" class="text-black" :active="request()->routeIs('application')">
                             Application
                         </x-nav-link>
 
-                        <x-nav-link :href="route('form.index.student',['id'=>auth()->user()->id])" class="text-white" :active="request()->routeIs('form.index.student')">
+                        <x-nav-link :href="route('form.index.student',['id'=>auth()->user()->id])" class="text-black" :active="request()->routeIs('form.index.student')">
                             Application List
                         </x-nav-link>
 
                     @elseif (auth()->user()->role == 'admin')
-                        <x-nav-link :href="route('form.index')" class="text-white" :active="request()->routeIs('form.index')">
+                        <x-nav-link :href="route('form.index')" class="text-black" :active="request()->routeIs('form.index')">
                             Application List
                         </x-nav-link>
                     @endif

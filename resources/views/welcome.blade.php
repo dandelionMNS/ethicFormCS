@@ -12,32 +12,32 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{asset('styles.css')}}">
+    <link rel="stylesheet" href="{{ asset('styles.css') }}">
 </head>
 
 <body class="font-sans antialiased">
     <div class="bg-gray-50 text-black/50 ">
-        <div
-            class="relative min-h-screen flex flex-col items-center justify-top selection:bg-[#FF2D20] selection:text-white" style="background: url('{{asset('./images/bg.jpg')}}'); background-size: cover;">
-            <div class="relative w-full max-w-2xl px-6 flex text-white flex-col lg:max-w-7xl">
+        <div class="relative min-h-screen flex flex-col items-center justify-top selection:bg-[#FF2D20] selection:text-white"
+            style="background: #fff ; background-size: cover;">
+            <div class="relative w-full max-w-2xl px-6 flex text-black flex-col lg:max-w-7xl">
                 <header class="flex justify-end my-5">
-                  
+                    <img src="https://uitm.edu.my/images/images/logo/logoUiTM.png">
                     @if (Route::has('login'))
                         <nav class="-mx-3 flex flex-1 justify-end">
                             @auth
                                 <a href="{{ url('/dashboard') }}"
-                                    class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] ">
+                                    class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition  focus:outline-none focus-visible:ring-[#FF2D20] ">
                                     Dashboard
                                 </a>
                             @else
                                 <a href="{{ route('login') }}"
-                                    class="rounded-md px-3 py-2  ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] ">
+                                    class="rounded-md px-3 py-2  ring-1 ring-transparent transition  focus:outline-none focus-visible:ring-[#FF2D20] ">
                                     Log in
                                 </a>
 
                                 @if (Route::has('register'))
                                     <a href="{{ route('register') }}"
-                                        class="rounded-md px-3 py-2  ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] ">
+                                        class="rounded-md px-3 py-2  ring-1 ring-transparent transition focus:outline-none focus-visible:ring-[#FF2D20] ">
                                         Register
                                     </a>
                                 @endif
@@ -46,8 +46,10 @@
                     @endif
                 </header>
 
-                <main class="mt-6 flex-col flex justify-center" style="height: 75vh">
-                    <h1 class="text-7xl home-title">Welcome to Ethics Form<br> for Computer Science Students</h1>
+                <main class="mt-20 flex-col flex items-center justify-center" style="max-height: none">
+                    <h1 class="text-3xl text-black text-center home-title">Welcome to Ethics Form<br> for Computer Science Students
+                    </h1>
+                    <img src='{{ asset('./images/welcome.png') }}' style="width:800px;">
                 </main>
 
                 <footer class="py-16 text-center text-sm">
